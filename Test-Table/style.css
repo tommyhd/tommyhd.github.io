@@ -1,0 +1,81 @@
+html {
+    color-scheme: dark;
+}
+
+body {
+    color: #eee;
+    font-size: 1.125rem;
+    font-family: system-ui;
+    line-height: 1.5;
+}
+
+.wrapper {
+    width: min(900px, 100% - 3rem);
+    margin-inline: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #323232;
+}
+
+caption,
+th,
+td {
+    padding: 1rem;
+    text-align: left;
+    min-width: block;
+}
+
+caption {
+    background: hsl(0 0% 0%);
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+th {
+    background: hsl(0 0% 0% / 0.5);
+}
+
+tr:nth-of-type(2n) {
+    background: hsl(0 0% 0% / 0.05);
+}
+
+.table-container {
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+@media (max-width: 650px) {
+    th{
+        display: none;
+        
+    }
+    td {
+        display:block ;
+    }
+
+    td:first-child {
+        padding-top: 20px;
+    }
+
+    td:last-child {
+        padding-top: 20px;
+    }
+
+    td data-cell rank {
+        
+    }
+
+    td:nth-of-type(1)::before {
+        content: "Rank: ";
+        font-weight: 700;
+    }
+
+    td:nth-of-type(2)::before {
+        content: "Rank: ";
+        font-weight: 700;
+    }
+}
